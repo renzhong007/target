@@ -1,0 +1,177 @@
+@charset "utf-8";
+.PicMiddle{vertical-align:middle}
+.ClearFloat{clear:both}
+.Hide{display:none}
+#Top {position: absolute; z-index: 999; width: 100%;margin:auto;padding:0px;font-size:14px;font-family:"微软雅黑";top:0px;}
+#Top a{text-decoration:none}
+#Top a img{border:none}
+#Top ul {padding: 0px; margin: 0px;}
+#Top li {padding: 0px; margin: 0px;}
+#Top .user{
+	width:65px;
+	height:50px;
+	float:left;
+	background: #C6C5C3;
+
+}
+#Top .Toolbar1{background-repeat:repeat-x;padding-left:5px;padding-top:10px;height:50px;}
+#Top .Toolbar1 .CentreBox{width: 100%;height:40px;background-color:white;color:white;font-size:20px;line-height:48px;
+ font-family:微软雅黑;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+#Top .Toolbar1 .CentreBox img{
+	float:left;
+}
+#Top .Toolbar1 .CentreBox .Logo{float:left;height:50px;width: 195px;padding-left: 10px;}
+#Top .Toolbar1 .CentreBox .Menu{height:50px;width:671px;float:left}
+#Top .Toolbar1 .CentreBox .Menu .List1{float:left;text-align:center;list-style-type:none;height:50px;position:relative;left:11px;}
+#Top .Toolbar1 .CentreBox .Menu .List1 li{width:68px;float:left;height:50px;line-height:50px}
+#Top .Toolbar1 .CentreBox .Menu .List1 .Select{background-image:url(../../Images/menu/background_3.png);background-repeat:no-repeat;background-position:center}
+#Top .Toolbar1 .CentreBox .Menu .List1 a{color:#FFFFFF;font-size:15px}
+#Top .Toolbar1 .CentreBox .Menu .List2{float:right;position:relative;right:20px;list-style-type:none;height:50px;text-align:center}
+#Top .Toolbar1 .CentreBox .Menu .List2 li{float:left;width:63px;line-height:50px}#Top .Toolbar1 .CentreBox .Menu .List2 a{color:#FFFFFF}
+
+#Top .Toolbar1 .CentreBox .systemInfo{
+	display: inline-table;
+	height:50px;
+	border-left:1px solid #E0E0E0;
+	margin-top:-10px;
+	float:right;
+	line-height:50px;
+	font-size:14px;
+}
+#Top .Toolbar1 .CentreBox .systemInfo>div{
+	width:67px;
+	height:50px;
+	border-right:1px solid #E0E0E0;
+	float:left;
+	color:black;
+	text-align: center;
+}
+#Top .Toolbar1 .CentreBox .systemInfo>div>a{
+	width: 100%;
+    height: 100%;
+    display: inline-table;
+}
+    
+#Top .Toolbar1 .CentreBox .systemInfo>div:hover{
+	border-bottom:3px solid #394556;
+}
+#Top .Toolbar1 .CentreBox .systemInfo>div.checked:hover{
+	box-shadow: none;
+}
+
+
+#Top .Toolbar1 .CentreBox .systemInfo > div.checked{
+	background: #24afaa;
+	/* border-bottom:3px solid #394556; */
+}
+#Top .Toolbar1 .CentreBox .systemInfo > div.checked >a{
+	color: white;
+}
+#Top .Toolbar1 .CentreBox .UserInfo{;height:40px;width:190px;float:right;color:black}
+#Top .Toolbar1 .CentreBox .UserInfo .login-box {
+position: relative;
+float: right;
+width: 154px;
+height: 30px;
+}
+
+#Top .Toolbar1 .CentreBox .UserInfo .avatar {
+border-radius: 350px;
+-webkit-border-radius: 350px;
+-moz-border-radius: 350px;
+width: 30px;
+height: 30px;
+border: 1px #dedede solid;
+float: left;
+}
+#Top .Toolbar1 .CentreBox .UserInfo  span{
+	margin-left: 2px;
+	float:left;
+	line-height:31px;
+	color:black;
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 13px;
+}
+#Top .Toolbar1 .CentreBox .UserInfo .logout{
+	float: left;
+	width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    margin-top: 2px;
+    position:absolute;
+}
+#Top .Toolbar1 .CentreBox .UserInfo .prompt{
+	position:relative;display: inline-table;
+	float:left;
+}
+#Top .Toolbar1 .CentreBox .UserInfo .prompt{
+	height:50px;
+	margin-top:-10px;
+	padding-top:10px;
+}
+#Top .Toolbar1 .CentreBox .UserInfo .prompt[checked='checked']{
+	background: #E8E8E8;
+}
+#Top .Toolbar1 .CentreBox .UserInfo .message{
+	width:18px;
+	height:18px;
+	background: #FF6C60;
+	position:absolute;
+	right:5px;
+	top:7px;
+	z-index:10;
+	line-height: 18px;
+	text-align:center;
+	border-radius: 4px;
+	color:white;
+}
+#Top .Toolbar1 .CentreBox .UserInfo .dropdown-menu{
+	width:300px;
+	height:350px;
+	position:absolute;
+	top:50px;
+	right:0px;
+	background: white;
+	border-radius: 2px 0 2px 2px;
+	border: 1px solid #ECECEC;
+	display: none;
+}
+#Top .Toolbar1 .CentreBox .UserInfo  .triangle_top{
+    position: absolute;
+    top: 42px;
+    width: 21px;
+    right: 6px;
+    height: 9px;
+    z-index: 9;
+    display: none;
+}
+#Top .Toolbar1 .CentreBox .UserInfo .dropdown-menu h5{
+	line-height:0px;
+	height:5px;
+	background:#65cea7;
+	width:100%;
+	padding:15px;
+	color:white;
+	font-size:13px;
+}
+#Top .Toolbar1 .CentreBox .UserInfo .NickName{background-image:url(../../Images/menu/Arrow_2.png);background-repeat:no-repeat;text-align:right;padding-right:25px;background-position:160px 8px;position:relative;top:17px;overflow:hidden}
+#Top .Toolbar1 .CentreBox .UserInfo .NickName a{color:#FFFFFF}
+#Top .Toolbar1 .CentreBox .Setting{float:left;height:16px;width:16px;position:relative;top:17px;background-image:url(../../Images/menu/Setting.png);background-repeat:no-repeat;margin-right:10px;margin-left:10px}
+#Top .Toolbar1 .CentreBox .Setting a{height:16px;width:16px;display:block}
+#Top .Toolbar1 .CentreBox .Message{height:16px;width:16px;float:left;position:relative;top:17px;background-image:url(../../Images/menu/Message.png);background-repeat:no-repeat;margin-left:10px}
+#Top .Toolbar1 .CentreBox .Message a{height:16px;width:16px;display:block}
+#Top .Toolbar2{background-image:url(../../Images/menu/background_4.png);background-repeat:repeat-x;height:30px;clear:both}
+#Top .Toolbar2 .CentreBox{height:30px;width:1210px}
+#Top .Toolbar2 .CentreBox .Menu{position:relative;overflow:hidden;height:30px;width:910px;left:180px;float:left}
+#Top .Toolbar2 .CentreBox .Menu ul{list-style-type:none;height:30px;position:absolute}
+#Top .Toolbar2 .CentreBox .Menu ul li{float:left;height:30px;width:100px;text-align:center;line-height:30px}
+#Top .Toolbar2 .CentreBox .Menu ul li a{color:#434343;font-size:14px}
+#Top .Toolbar2 .CentreBox .Menu ul .Select{background-image:url(../../Images/menu/background_5.png);background-repeat:no-repeat;background-position:center center}
+
+#Top .Toolbar2 .CentreBox .Legend{position:absolute;overflow:hidden;height:30px;right: 0;width: 200px; line-height: 30px;}
+#GIS{width:50px !important;}

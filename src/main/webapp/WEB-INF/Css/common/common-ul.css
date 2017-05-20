@@ -1,0 +1,3 @@
+.ul-horizontal { display: table;}
+.ul-horizontal ul { padding:0px; }
+.ul-horizontal ul li { list-style:none; float:left; padding-left:10px; }

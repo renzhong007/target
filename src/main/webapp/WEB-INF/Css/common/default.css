@@ -1,0 +1,116 @@
+*{font-size:12px; font-family:Tahoma,Verdana,\5FAE\8F6F\96C5\9ED1,\5B8B\4F53}
+html,body{background:#EFF0F4; }
+a{ color:Black; text-decoration:none;}
+a:hover{ color:Red; text-decoration:underline;}
+.textbox03 {border: #878787 1px solid;padding: 4px 3px;font:Verdana, Geneva, sans-serif,\5B8B\4F53;line-height: 14px; background-color: #fff;  height: auto; font-size: 14px;  font-weight: bold; width: 190px; }
+
+.txt01{font:Verdana, Geneva, sans-serif,\5B8B\4F53;padding:3px 2px 2px 2px; border-width:1px; border-color:#ddd;  color:#000;}
+.txt {border: #878787 1px solid;padding: 4px 3px;font:Verdana, Geneva, sans-serif,\5B8B\4F53;line-height: 14px; background-color: #fff;  height: auto; font-size: 14px;}
+.footer{text-align:center;color:#15428B; margin:0px; padding:0px;line-height:23px; font-weight:bold;}
+
+.head a{color:White;text-decoration:underline;}
+.faj-form {background-color: #fff;}
+
+.left-menu ul{list-style-type:none;margin:0px; padding:10px;}
+.left-menu ul li{ padding:0px;}
+.left-menu ul li a{line-height:24px;}
+.left-menu ul li div{margin:2px 0px;padding-left:10px;padding-top:2px;}
+.left-menu ul li div.hover{border:1px dashed #99BBE8; background:#E0ECFF;cursor:pointer;}
+.left-menu ul li div.hover a{color:#416AA3;}
+.left-menu ul li div.selected{border:1px solid #99BBE8; background:#E0ECFF;cursor:default;}
+.left-menu ul li div.selected a{color:#416AA3; font-weight:bold;}
+
+.icon{ background:url(../../Images/common/tabicons.png) no-repeat 240px 12px;width:18px; line-height:18px; display:inline-block;}
+.icon-set{ background-position:-380px -200px;}
+.icon-add1{background-position: -162px -160px;}
+.icon-nav{background-position: -100px -20px; }
+.icon-users{background-position: -100px -480px;}
+.icon-teacher{background-position: -180px -480px;}
+.icon-depart{background-position: -200px -160px;}
+.icon-position{background-position: -140px -380px;}
+.icon-department{background-position: -160px -380px;}
+.icon-major{background-position: -180px -380px;}
+.icon-class{background-position: -200px -380px;}
+.icon-role{background-position: -260px -480px;}
+.icon-admin{background-position: -159px -480px;}
+.icon-log{background-position: -380px -80px;}
+.icon-delete{ background-position:-140px -120px;}
+.icon-edit{ background-position:-380px -320px;}
+.icon-magic{ background-position:0px -500px;}
+.icon-database{ background-position:-20px -140px;}
+.icon-lists{ background-position:-200px -400px;}
+.icon-link{ background-position:-260px -420px;}
+.icon-list{ background-position:-382px -80px;}
+.icon-tool{ background-position:2px -220px;}
+.icon-see{ background-position:-62px -258px;}
+.icon-goods{ background-position:-200px -80px;}
+.icon-money{ background-position:-340px -260px;}
+.icon-postage{ background-position:-60px -140px;}
+.icon-activity{ background-position:-360px -340px;}
+.icon-html{ background-position:-340px -260px;}
+.icon-recycle{ background-position:-340px -40px;}
+.icon-static{ background-position:-240px -80px;}
+.icon-files{ background-position:-0px -200px;}
+.icon-excel{ background-position:-260px -140px;}
+
+.icon-socket{ background-position:-40px -100px;}
+.icon-socket1{ background-position:-22px -140px;}
+.icon-socket3{ background-position:-302px -220px;}
+
+.icon-order{ background-position:-302px -80px;}
+.icon-order1{ background-position:-282px -80px;}
+.icon-order2{ background-position:-62px -140px;}
+
+.icon-edit1{ background-position:-182px -0px;}
+.icon-auth{ background-position:-20px -262px;}
+
+.icon-pro { background-position:-300px 0px;}
+.icon-key { background-position:-380px -220px;}
+.icon-gman { background-position:-80px -420px;}
+.icon-addf { background-position:-60px 0px;}
+.icon-chk { background-position:0px -260px;}
+.icon-cont { background-position:-180px -100px;}
+.icon-order { background-position:-20px -320px;}
+.icon-stro { background-position:-380px -140px;}
+.icon-purchase { background-position:-40px -100px;}
+.icon-people { background-position:-360px -200px;}
+.icon-pmove { background-position:-200px -460px;}
+.icon-trane { background-position:-80px -140px;}
+.icon-gandr { background-position:-300px -240px;}
+.icon-daily { background-position:-120px -360px;}
+.icon-lab { background-position:-240px -20px;}
+.icon-basic { background-position:0px -140px;}
+.icon-org { background-position:-300px -80px;}
+.icon-roles { background-position:-140px -480px;}
+.icon-project { background-position:-380px -60px;}
+.icon-coop { background-position:-181px -260px;}
+.icon-surport { background-position:-280px -340px;}
+.icon-part { background-position:0px -40px;}
+.icon-pstate { background-position:-40px -280px;}
+.icon-nation { background-position:-80px -100px;}
+.icon-zw { background-position:-80px -360px;}
+.icon-each { background-position:-20px -220px;}
+.icon-partic { background-position:-201px -40px;}
+.icon-tranel { background-position:-140px -140px;}
+.icon-pros { background-position:-140px -240px;}
+.icon-prol { background-position:-280px -440px;}
+.icon-metl { background-position:-260px -440px;}
+.icon-supl { background-position:-321px -480px;}
+.icon-buyl { background-position:-380px -20px;}
+.icon-remoney { background-position:-340px 0px;}
+.icon-resl { background-position:-240px -40px;}
+.icon-latel { background-position:-120px -320px;}
+.icon-coopl { background-position:-120px -140px;}
+.icon-workl { background-position:-60px -320px;}
+.icon-contm { background-position:-200px -280px;}
+.icon-contlist { background-position:-180px -160px;}
+.icon-ontime { background-position:-220px -160px;}
+.icon-add { background-position:-100px -0px;}
+.icon-inq { background-position:-20px -300px;}
+.icon-addsz{background-position:-20px 0px;}   /* 十字加 */
+.icon-refresh{background-position:-120px -40px;} /*顺时针刷新*/
+.icon-print{background-position:-240px -340px;} /*打印*/
+.icon-save1{background-position:-360px -280px;} /*保存*/
+.icon-search1{background-position:-220px -200px;}/*搜索*/
+.icon-back{background-position:-60px -40px;}/*回退*/
+.icon-download{background-position:0px -20px;}/*down*/

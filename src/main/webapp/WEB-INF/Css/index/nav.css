@@ -1,0 +1,6 @@
+#header {height: 60px; position: fixed; top: 0; left: 0; right: 0; background-color: #212123;}
+#header .header-right {height: 60px; float: right; line-height: 60px;  }
+#header .header-right > span {color: white;}
+
+
+

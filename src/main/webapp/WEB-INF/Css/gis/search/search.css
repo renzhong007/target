@@ -1,0 +1,538 @@
+#searchmodel {
+	position: absolute;
+	left: 0px;
+    top: 0px;
+	overflow: visible;
+	/* pointer-events: none; */
+	width: 380px;
+	z-index: 100;
+	
+	height:"70px";
+}
+#searchboxBg{
+	padding:10px 10px 10px 10px;
+	width:100%;height:70px;
+}
+/*锟秸硷拷锟斤拷锟斤拷  */
+#spaceSearch{
+	width:360px;
+	position: relative;
+	z-index: 5;
+	height: 140px;
+	display: none;
+}
+#spaceSearch >header{
+	width:100%;
+	height:30px;
+}
+#spaceSearch >header>nav>ul{
+	margin-bottom:5px;
+}
+#spaceSearch >header>nav>ul>li{
+	padding:3px 0px;
+	float:left;
+	list-style-type: none;
+	font-size: 14px;
+    font-weight: bold;
+    color:white;
+    font: 14px/1.6 Verdana, \5b8b\4f53;
+    text-indent: 1px;
+    width:84px;
+    margin:0px 13px;
+    color:#ccc;
+}
+#spaceSearch >header>nav>ul>li:before{
+	content:'';
+	background: url("../../../Images/gis/search/directions-1x-20150929.png") -24px -49px no-repeat;
+	display: block;
+	width:21px;height:21px;
+	float: left;
+}
+#spaceSearch >header>nav>ul>li.checked{
+	border-bottom:2px solid white;
+	color:white;
+}
+#spaceSearch >header>nav>ul,#spaceSearch >header>nav>button{
+	float:left;
+}
+#spaceSearch >header>nav>button{
+	width:24px;
+	height:24px;
+	border:0;
+    background: url("../../../Images/gis/search/clear-1x-20150504.png") -49px 0px no-repeat;
+    margin-top: 2px;
+}
+#spaceSearch section ,
+#spaceSearch section div{
+	width:100%;
+	height:120px;
+	text-align: left;
+	padding:0px 10px;
+}
+#spaceSearch section div{
+	display: none;
+}
+#spaceSearch section div.checked{
+	display: block
+}
+#spaceSearch section div.location >ul{
+	width:100%;
+}
+#spaceSearch section div.location >ul>li{
+	
+	height:40px;
+	float:left;
+	font-size:14px;
+	font: inherit;
+}
+#spaceSearch section div.location >ul>li:first-child{
+	width:20%;
+	line-height:65px;
+	text-align: right;
+}
+#spaceSearch section div.location >ul>li:first-child+li{
+	width:61%;
+	border-bottom:1px solid #ccc;
+}
+#spaceSearch section div.location >ul,#spaceSearch section div.location >ul>li input{
+	border:0;
+	background: none;
+	color:white;
+	width:100%;
+	margin:0px;
+	height:40px;
+	padding:0px;
+	font-size:14px;line-height:60px;
+}
+#spaceSearch section div.spatial{
+	padding:0px;
+}
+#spaceSearch section div.spatial >ul{
+	
+}
+#spaceSearch section div.spatial >ul>li{
+	float:left;
+	font-size: 14px;
+	font-family:inherit;
+	color:white;
+	border-top:1px dashed #ccc;
+}
+#spaceSearch section div.spatial >ul>li:first-child{
+	line-height: 50px;
+}
+#spaceSearch section div.spatial >ul>li:first-child,#spaceSearch section div.spatial >ul>li:first-child+li+li{
+	width:11%;
+	padding-top:10px;
+}
+#spaceSearch section div.spatial >ul>li:first-child+li,#spaceSearch section div.spatial >ul>li:first-child+li+li+li{
+	width:89%;
+}
+#spaceSearch section div.spatial >ul>li>ul{
+	width:100%;display: inline-table;
+	margin:0px;
+	padding-top:4px;
+	
+}
+#spaceSearch section div.spatial >ul>li>ul>li{
+	width:57px;
+	float:left;
+	color:white;
+	font-size: 13px;
+	font-family:inherit;letter-spacing:1px;
+	height:27px;
+	padding:5px 0px 0px 0px;
+	margin:1px;
+}
+#spaceSearch section div.spatial >ul>li>ul>li.checked{
+    border: 1px solid #82FF30;
+}
+	/* 锟斤拷锟斤拷锟窖�  */
+#spaceSearch section div.nearby>ul:first-child{
+	width:80%;
+	float:left;
+}
+#spaceSearch section div.nearby>ul:first-child+ul{
+	width:19%;
+	float:left;
+	padding-left:10px;
+}
+#spaceSearch section div.nearby>ul:first-child+ul li{
+	margin:27px 0px 0px 0px;
+}
+#spaceSearch section div .searchbutton,#spaceSearch section div .locationbutton{
+	height:24px !important;
+	width:57px !important;
+	float:right !important;
+	color:white;
+	text-indent: 19px;
+    border: 1px solid #ccc;
+    padding:1px !important;
+    font-size:14px !important;
+    line-height:normal !important;  	
+}    
+#spaceSearch section div .locationbutton{
+	    background: url("../../../Images/gis/search/quantum_search_button-20150825-1x.png") -48px 0px no-repeat;
+	    cursor: pointer;
+}
+#spaceSearch section div .searchbutton{
+	background: url("../../../Images/gis/search/quantum_search_button-20150825-1x.png") -48px 0px no-repeat;
+	cursor: pointer;
+}
+#spaceSearch section div.nearby>ul:first-child>li{
+	width:100%;
+}
+#spaceSearch section div.nearby>ul:first-child>li>label{
+	width:80px;
+}
+#spaceSearch section div.nearby>ul:first-child>li{
+	font-family: inherit;
+	font-size: 15px;
+	color:white;
+	float:left;
+	font-weight: normal;
+	text-align: justify;
+	padding:5px;
+}
+#spaceSearch section div.nearby>ul:first-child>li:first-child,#spaceSearch section div.nearby>ul:first-child>li:first-child+li+li,#spaceSearch section div.nearby>ul:first-child>li:first-child+li+li+li+li{
+	width:20%;
+	padding:11px 0px 0px 0px;
+}
+#spaceSearch section div.nearby>ul:first-child>li:first-child+li,#spaceSearch section div.nearby>ul:first-child>li:first-child+li+li+li,#spaceSearch section div.nearby>ul:first-child>li:first-child+li+li+li+li+li{
+	width:80%;
+	border-bottom:1px solid #ccc;
+	padding: 10px 0px 0px 0px;
+}
+#spaceSearch section div.nearby>ul:first-child>li>input{
+	background: none;
+    width: 176px;
+	border:none;
+}
+
+/*锟秸硷拷锟斤拷锟斤拷end  */
+#searchbox {
+	border-radius: 2px;
+	width: 360px;
+	position: relative;
+	z-index: 5;
+	/* box-shadow: 1px 2px 1px rgba(0,0,0,.15); */
+	    box-shadow: -1px 4px 23px rgba(0,0,0,.15);
+}
+#searchbox #searchbox-container {
+    position: relative;
+    z-index: 2;
+    pointer-events: auto;
+    width: 246px;
+    float: left;
+    box-sizing: border-box;
+}
+#sole-searchbox-content {
+    position: relative;
+}
+.searchbox-content {
+	height:48px;
+    width: 246px;
+    border-radius: 2px 0 0 2px;
+    background: #fff;
+}
+.theme-festival-spring #searchbox #sole-input {
+    background: url(http://webmap0.map.bdstatic.com/wolfman/static/common/images/theme/theme-festival2x_3ee15d1.png) no-repeat 0 0;
+    background-size: 425px 57px;
+    border-left: 0;
+    padding-left: 19px;
+}
+#sole-searchbox-content #sole-input {
+    box-sizing: border-box;
+    border: 0;
+    padding: 9px 0;
+    border-left: 10px solid transparent;
+    border-right: 27px solid transparent;
+    line-height: 20px;
+    font-size: 16px;
+    height: 48px;
+    color: #333;
+    position: relative;
+}
+.searchbox-content .searchbox-content-common {
+    box-sizing: border-box;
+    float: left;
+    width: 198px;
+    height: 48px;
+}
+
+.theme-festival-spring #searchbox #sole-searchbox-content .input-clear {
+    border-top: 1px solid #F44336;
+    border-bottom: 1px solid #F44336;
+    box-sizing: border-box;
+}
+#sole-searchbox-content .input-clear {
+    right: 39px;
+}
+.searchbox-content .input-clear {
+    cursor: pointer;
+    position: absolute;
+    width: 27px;
+    height: 48px;
+    top: 0;
+    background: url(../../../Images/gis/search/searchbox.png) no-repeat 0 -114px #fff;
+    display: none;
+}
+.theme-festival-spring #searchbox #sole-searchbox-content .searchbox-content-button {
+    border-top: 1px solid #F44336;
+    border-bottom: 1px solid #F44336;
+}
+.theme-festival-spring #searchbox .searchbox-content .searchbox-content-button.route-button {
+    border-top: 1px solid #F44336;
+    border-bottom: 1px solid #F44336;
+    background: url(http://webmap0.map.bdstatic.com/wolfman/static/common/images/theme/theme-festival2x_3ee15d1.png) no-repeat -382px -1px;
+    background-size: 425px 57px;
+}
+.searchbox-content .searchbox-content-button.route-button {
+    background: url(../../../Images/gis/search/searchbox.png) no-repeat 5px 6px;
+}
+.searchbox-content .searchbox-content-button {
+    box-sizing: border-box;
+    float: left;
+    height: 48px;
+    width: 39px;
+    cursor: pointer;
+    position: relative;
+}
+.theme-festival-spring #searchbox #search-button {
+    background-color: #F44336;
+}
+#searchbox .button{
+	pointer-events: auto;
+    width: 57px;
+    height: 48px;
+    float: left;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+}
+#searchbox #search-button {
+    background: url(../../../Images/gis/search/quantum_search_button-20150825-1x.png) no-repeat 0 -70px white;
+    border-radius: 0 2px 2px 0;
+    position: relative;
+}
+#searchbox #search-button:before{
+	content: '';
+    position: absolute;
+    width: 48px;
+    left: 0;
+    top: 10px;
+    border-left: 1px solid #ddd;
+    height: 30px;
+}
+#searchbox #search-button span {
+	position: absolute;
+	left:50%;
+	margin-left:-12px;
+	top:50%;
+	margin-top:-12px;
+	content:'';
+    background: url(../../../Images/gis/search/quantum_search_button-20150825-1x.png) no-repeat 0 0px white;
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+#searchbox #space-button {
+    background: url(../../../Images/gis/search/directions-1x-20150909.png) no-repeat 14px 14px white;
+}
+#searchbox #type-button {
+    background: url(../../../Images/gis/search/quantum_menu-v2-1x.png) no-repeat 19px 13px white;
+    border-radius: 2px 0 0 2px;
+}
+#searchmodel #searchboxBg #toggle-button {
+    width: 23px;
+    height: 48px;
+    cursor: pointer;
+    background:white;
+    position:absolute;
+    top:10px;
+    right:-23px;
+    border: 0;
+    padding: 0;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.3);
+    display: none;
+}
+#searchmodel #searchboxBg #toggle-button span{
+	display:block;
+	content:'';
+	background:url(../../../Images/gis/search/toggle.png) no-repeat 0px 0px ;
+	/* background:url(../../../Images/gis/search/toggle.png) no-repeat -22px 0px ; */
+	width: 7px;
+    height: 16px;
+    margin-left:8px;
+}
+.clearfix {
+    zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: "";
+}
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: "";
+}
+.clearfix:after{clear:both}
+
+*:focus {outline: none;}
+
+#searchboxBg #searchbox #type-button:after{
+/* 	content: '';
+    position: absolute;
+    width: 48px;
+    right: 0;
+    top: 10px;
+    border-right: 1px solid #ddd;
+    height: 30px; */
+}
+.searchbox-content .searchbox-content-button.right-button:before {
+    content: '';
+    position: absolute;
+    width: 48px;
+    left: 0;
+    top: 10px;
+    border-left: 1px solid #ddd;
+    height: 30px;
+}
+.rs-list {
+    width: 368px;
+    position: relative;
+    z-index: 0;
+}
+
+.rs-panel {    pointer-events: auto;
+    width: 100%;
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 1px 2px 1px rgba(0,0,0,.15);
+    overflow: auto;
+    overflow-x: hidden;
+    position: relative;
+    border-radius: 2px;
+    -webkit-transition: max-height .5s;
+    transition: max-height .5s;
+}
+#searchmodel #search-content{
+	position:absolute;
+	width:100%;
+	top:70px;
+	left:0px;
+	background: white;
+	z-index:999px;
+	bottom:43px;
+	display: none;
+}
+/* 锟斤拷页锟斤拷始 */
+#searchmodel #search-page{
+	position:absolute;
+	width:100%;
+	height:43px;
+	left:0px;
+	background: white;
+	z-index:999px;
+	bottom:0px;
+	border-top: 1px solid #e6e6e6;
+	padding: 11px 18px 13px;
+	text-align: right;
+   	color: #8c8c8c;
+    font-size: 12px;
+    line-height: 18px;
+    display: none;
+}
+#searchmodel #search-page .pre,#searchmodel #search-page .next{
+	cursor: pointer;
+    margin-left: 14px;
+    padding-left: 4px;
+    padding-right: 4px;
+    text-decoration: none;
+    height:16px;
+    border:0;
+}
+#searchmodel #search-page .pre{
+	background: url(../../../Images/gis/search/arrow.png);
+}
+#searchmodel #search-page .next{
+	background: url(../../../Images/gis/search/arrow.png) -11px 0;
+}
+/* 锟斤拷页锟斤拷锟斤拷 */
+
+
+
+
+#searchmodel #search-content .select-content-type{
+	padding:5px;
+	width:100%;
+	background: #3367D6;
+	display: inline-block;
+	display: none;
+}
+#searchmodel #search-content .select-content-type ul{
+	width:100%;
+	display: inline-table;
+	margin:0px;
+}
+#searchmodel #search-content .select-content-type ul li{
+	width:20%;
+	float:left;
+	list-style-type: none;
+	font-family: inherit;
+	font-size: 13px;
+	color:white;
+	padding:3px;
+}
+#searchmodel #search-content .nano-content{
+	padding:3px 0px;
+}
+#searchmodel #search-content .nano-content table{
+	width:100%;
+	border:0;	
+	font-family: inherit;
+	font-size: 14px;
+	color:#8c8c8c;
+}
+#searchmodel #search-content .nano-content table tbody:hover{
+	background: #fafafa;
+}
+#searchmodel #search-content .nano-content table td{
+	padding:3px 10px;
+    font-size: 13px;
+}
+#searchmodel #search-content .nano-content table .content-icon{
+	width:80px;
+	margin: auto;
+}
+#searchmodel #search-content .nano-content table .content-title{
+	    color: #000;
+	        font-size: 15px;
+}
+#searchmodel #search-content .nano-content table .border{
+	border-bottom:1px dashed #ccc;
+}
+#search-content .nano-content table .content-icon {width: 19px!important;height: 29px;margin: 4px 0 0 7px;background: url(../../../Images/gis/layerbar/markers.png) no-repeat;}
+#search-content .nano-content table .content-icon#no1 {background-position: 0 -198px;}
+#search-content .nano-content table .content-icon#no2 {background-position: -24px -198px;}
+#search-content .nano-content table .content-icon#no3 {background-position: -48px -198px;}
+#search-content .nano-content table .content-icon#no4 {background-position: -72px -198px;}
+#search-content .nano-content table .content-icon#no5 {background-position: -96px -198px;}
+#search-content .nano-content table .content-icon#no6 {background-position: -120px -198px;}
+#search-content .nano-content table .content-icon#no7 {background-position: -144px -198px;}
+#search-content .nano-content table .content-icon#no8 {background-position: -168px -198px;}
+#search-content .nano-content table .content-icon#no9 {background-position: -192px -198px;}
+#search-content .nano-content table .content-icon#no10 {background-position: -216px -198px;}
+.result .focus-over #no1, .result .focus #no1 {background-position: 0 -230px;}
+.result .focus-over #no2, .result .focus #no2 {background-position: -24px -230px;}
+.result .focus-over #no3, .result .focus #no3 {background-position: -48px -230px;}
+.result .focus-over #no4, .result .focus #no4 {background-position: -72px -230px;}
+.result .focus-over #no5, .result .focus #no5 {background-position: -96px -230px;}
+.result .focus-over #no6, .result .focus #no6 {background-position: -120px -230px;}
+.result .focus-over #no7, .result .focus #no7 {background-position: -144px -230px;}
+.result .focus-over #no8, .result .focus #no8 {background-position: -168px -230px;}
+.result .focus-over #no9, .result .focus #no9 {background-position: -192px -230px;}
+.result .focus-over #no10, .result .focus #no10 {background-position: -216px -230px;}
+

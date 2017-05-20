@@ -1,0 +1,20 @@
+/*author: MJ*/
+#mainNorth  {height: 94px;box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3);}
+#mainWest {
+	width: 65px;
+	background: #394556;
+	box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.3);
+	overflow: visible;
+}
+#mainCenter {background: #F9F9F7;}
+
+#centerWest {width: 200px;}
+#centerNorth {height: 30px;    }
+#centerEast {width: 650px;}
+#centerCenter {padding: 5px; background: #F0F0F0;}
+
+#centercenterEast {width: 200px;}
+
+#dg {width:100%;height:100%;}
+
+.div-inline {display: inline;}

@@ -1,0 +1,41 @@
+a:hover {text-decoration:none;}
+
+/* 隐藏 */
+.hide {display: none;}
+
+/* 切换按钮 */
+.toggle {cursor: point;background-color: #fff;}
+/*左tabs*/
+.right {position: fixed; top: 0px; bottom: 0; right: 0; width:530px; background-color: #fff;}
+.right .nav {position: absolute; left: -53px; }
+.nav ul, .nav li {margin: 0; padding: 0; list-style: none;}
+.right .content {width: 100%; height: 100%; border: #ccc solid 1px;}
+.right>.nav>ul>li{margin-left:4px;font-size:14px;word-wrap:break-word;word-break:normal;list-style: none; cursor: pointer;}
+.right>.nav>ul>li>a {text-align: center;border: #ccc solid 1px; padding: 5px 10px; display: block; margin-bottom: -1px;background-color: #fff;}
+.right>.nav>ul>li>a:hover {background-color: #f0f0f0;}
+.right>.nav>ul>li.active>a {background-color: #f0f0f0; color: black; cursor: default;}
+
+/* 隐藏按钮 */
+.right .nav>.toggle {margin-left:4px;border: #ccc solid 1px; margin-bottom: -1px; font-size: 20px; text-align: center;}
+
+/* iframe 下面的tabs */
+.iframe>.content {position:fixed;top: 30px; bottom: 0; width: 100%; border-top: #ccc solid 1px;}
+.iframe>.nav>ul>li{font-size:14px;word-wrap:break-word;word-break:normal;list-style: none; cursor: pointer; float: left;}
+.iframe>.nav>ul>li>a {text-align: center;border-right: #ccc solid 1px; padding: 5px 10px; display: block;}
+.iframe>.nav>ul>li>a:hover {background-color: #f0f0f0;}
+.iframe>.nav>ul>li.active>a {background-color: #f0f0f0; color: black; cursor: default;}
+
+/*历史数据*/
+.iframe .content>.tools {border-bottom: #ccc solid 1px;}
+.iframe .content>.tools>form {padding-left: 5px;}
+.iframe .content>.tools>form>div {height: 30px;}
+.iframe .content>.tools>form label {height: 30px;vertical-align: middle; display: inline-block; line-height: 30px;padding: 0 3px;}
+.iframe .content>.tools>form select {vertical-align: middle; height: 21px;}
+.iframe .content>.content {position: absolute; top: 31px; bottom: 0; width: 100%;}
+.iframe .content>.footer {position: absolute; bottom: 0; height: 30px; left:0; right:0; border-top: #ccc solid 1px;}
+/*监测点*/
+#monitor {width: 100px;}
+
+#hiscontent {bottom: 31px;}
+#statcontent {bottom: 31px;}
+

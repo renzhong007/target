@@ -1,0 +1,20 @@
+.infoTab .pumpStatus {display: inline-block;}
+.infoTab .station-state-1{
+	width: 20px;
+	height: 20px;
+	background: url(../../../Images/gis/layerbar/b1.gif);
+	background-repeat: no-repeat;
+	overflow: hidden;
+	background-position:-2px -3px;
+	
+}
+
+.infoTab .station-state-0{
+	width: 20px;
+	height: 20px;
+	background: url(../../../Images/gis/layerbar/close.png);
+	background-repeat: no-repeat;
+	overflow: hidden;
+	background-position: -2px -3px;
+	
+}

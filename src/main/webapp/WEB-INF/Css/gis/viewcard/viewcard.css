@@ -1,0 +1,105 @@
+#viewcard-strip {    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: left 200ms;
+    transition-timing-function: cubic-bezier(0.0,0.0,0.2,1);}
+
+.presentation {    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 0;
+    bottom: 100%;
+    margin-bottom: 20px;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.expand-button-cont {     position: absolute;
+    right: 20px;
+    bottom: 0px;
+    white-space: nowrap;
+    z-index: 1;
+    max-height: 30px;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);}
+    
+    
+.expand-button {
+	    cursor: pointer;
+    height: 30px;
+    width: 144px;
+    background-color: white;
+    border-radius: 2px;
+    padding: 0;
+    border: none;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.3);
+}
+
+.go-button {    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    vertical-align: baseline;
+    background: transparent;
+    list-style: none;
+    overflow: visible;}
+
+.widget-expand-button {    position: absolute;
+    right: 0;
+    width: 113px;
+    height: 30px;
+    overflow: visible;
+    cursor: pointer;}
+    .widget-expand-button .ripple-container {
+    width: 100%;
+    height: 100%;
+}
+   .widget-expand-button-label {
+    height: 30px;
+    width: 90px;
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    cursor: pointer;
+    text-align: left;
+    background-repeat: no-repeat;
+    font-size: 12px;
+    font-weight: 400;
+    background-position: 8px 8px;
+    color: transparent;
+    background-image: url(../../../Images/gis/viewcard/imagery-show-1x.png);
+    background-size: 60px 15px;
+}
+.widget-expand-button-icon {
+    background: transparent url(../../../Images/gis/viewcard/expander-sprite-1x.png) 0 0 no-repeat;
+    background-size: 90px 30px;
+    cursor: pointer;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 7px;
+    right: 7px;
+}
+.widget-expand-button .widget-expand-button-icon {
+    background-position: 0 -15px;
+}
+.widget-runway-tray-open .expand-button {
+    border-radius: 2px 2px 0 0;
+    box-shadow: -1px -1px 2px 0px rgba(0,0,0,0.1),1px -1px 2px 0px rgba(0,0,0,0.1);
+}
+
+.widget-runway-tray-open .expand-button-cont {
+	bottom: -20px;
+}
+
+.viewcard-background {
+    box-shadow: 0px -3px 6px rgba(0,0,0,0.15);
+    border-top: 2px solid white;
+    height: 140px;
+    width: 100%;
+    background-color: #fff;
+}

@@ -1,0 +1,155 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+body, button, input, select, textarea {font:12px/1.5 "\5B8B\4F53",Tahoma,arial;}
+fieldset,img,button{border:none;}
+img,input,select{vertical-align:middle;}
+ol,ul{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:bofore,q:after{content:"";}
+abbr,acronym{border:0;}
+a{ text-decoration:none;}
+a:hover{ text-decoration:underline;color:#15428B;}
+
+
+.fl{float:left;display:inline;}
+.fr{float:right;display:inline;}
+.hidden{display:none;}
+.clr{clear:both;height:0;font-size:0;line-height:0;}
+.ml5{margin-left:5px;}
+.ml10{margin-left:10px;}
+.mt10{margin-top:10px;}
+.mb10{margin-bottom:10px;}
+.va{vertical-align:middle;}
+
+/*header*/
+.header{overflow: hidden;height: 30px;background: url(../images/layout-browser-hd-bg.gif) #7f99be repeat-x center 50%;line-height:20px;color: #fff; }
+.header .fl{padding-left:10px;font-size:16px;font-family:"\5FAE\8F6F\96C5\9ED1";}
+.header .fr{padding-right:10px;}
+.topwelcom b{padding-left:6px;}
+.topwelcom a{margin-left:8px;}
+.topwelcom a:link,.topwelcom a:visited{color:#fff;text-decoration:none;}
+.topwelcom a:hover{}
+.editpwdform{border:1px solid #ccc;}
+.editpwdform ul li{height:35px;line-height:35px;}
+.editpwdform ul li span{display:inline-block;width:80px;text-align:right;}
+.editpwdbtn{text-align:right;}
+.pwdinpt,.stext{border-color: #848484 #E0E0E0 #E0E0E0 #848484;border-style:solid;border-width:1px;height:16px;line-height:16px;padding:3px;width:140px;color:#888;}
+.onfocus{color:#333;}
+
+a.comtxt:link,a.comtxt:visited{color:#333;text-decoration:none;}
+a.comtxt:hover{color:#666;text-decoration:underline;}
+
+/*UserForm*/
+.UserForm{float: left; width: 94%;margin-top:10px; padding: 5px; border: 1px solid #99CCCC; min-width:980px;}
+.UserForm fieldset{border:1px solid #ccc; min-width:800px;}
+.UserForm fieldset legend{font-size:13px;color:#444;font-weight:bold; border: 1px solid #D8D8D8;margin-left:10px;padding:2px 5px;background-color: #F9F9F9;}
+.UserForm ul{padding:10px 0;}
+.UserForm ul li{height:35px;line-height:35px;}
+.UserForm ul li strong{font-weight:normal;display:inline-block;width:80px;padding-right:10px;text-align:right;}
+.UserForm ul li div{display: inline;}
+.Formtext{border-top:1px solid #848484;border-left:1px solid #848484;border-right:1px solid #E0E0E0;border-bottom:1px solid #E0E0E0;height: 20px;padding: 1px 2px;line-height: 20px;width:138px;}
+.Formtext-txtarea{border:1px solid #A7A6AA;height: 46px;padding: 1px 2px;line-height: 24px;width:370px;margin-right:5px;}
+.Formtext-bigtxtarea{border:1px solid #A7A6AA;height: 66px;padding: 1px 2px;line-height: 24px;width:370px;margin-right:5px;}
+.Formtext:focus{ background-color:#FFFFD9;}
+.materialurl{background-color:#fff;border-color: #848484 #E0E0E0 #E0E0E0 #848484;border-style: solid;border-width: 1px;height:16px;line-height:16px;padding:3px;}
+.texta{background-color:#fff;border-color: #848484 #E0E0E0 #E0E0E0 #848484;border-style: solid;border-width: 1px;padding:3px;}
+/* .datebox{height: 23px;padding: 1px 2px;line-height: 24px;width:140px;margin-right:5px;} */
+/* .combo-text{width:140px;} */
+/* .datebox{background:url(../images/bg-input.png) no-repeat scroll left top #FFFFFF;border:1px solid #A7A6AA;height: 23px;padding: 1px 2px;line-height: 24px;width:140px;margin-right:5px;} */
+.Dis{background-color:#eee;color:#666;}
+.easyui-validatebox{border-top:1px solid #848484;border-left:1px solid #848484;border-right:1px solid #E0E0E0;border-bottom:1px solid #E0E0E0;height: 20px;padding: 1px 2px;line-height: 20px;width:138px;}
+.formtext-pic{float:left; margin-left:50px; margin-top:10px; width:120px; height:160px; border: 1px solid #99CCCC;}
+
+.UserForm div label{display:inline-block;width:80px;text-align:right;padding-right:3px;}
+.UserForm div.empdesc label{display:inline-block;width:132px;text-align:right;}
+#red{color:red;padding-right:3px;}
+
+.UserForm1{float: left; width: 94%;margin-top:10px; padding: 5px; border: 1px solid #99CCCC; min-width:380px;}
+.UserForm1 div label{display:inline-block;width:80px;text-align:right;padding-right:3px;}
+
+.WinForm {width: 94%;margin-top: 10px;padding: 5px;border: 1px solid #99CCCC;margin-left: auto;margin-right: auto;}
+.querybtn{padding-right:25px;width:354px;}
+/*tabs
+--------------------------------------------*/
+.tabbox{padding:20px;}
+
+
+/*role*/
+.roletab{height:27px;border-bottom:1px solid #8DB2E3;}
+.roletab ul{}
+.roletab ul li{color:#15428B;cursor:pointer;background:url(../images/tabs_enabled.png) repeat-x;float:left;display:inline;margin-right:4px;padding:0 10px;border:1px solid #8DB2E3;height:26px;line-height:26px;}
+.roletab ul li.selected{font-weight:bold;background:url(../images/tabs_active.png) repeat-x;border-bottom:1px solid #fff;}
+.roleshow{border:1px solid #8DB2E3;border-top:none;}
+.roleshow ul{padding:10px 0;}
+.roleshow ul li{padding:10px 0 5px 0;color:#444;}
+.roleshow ul li label{color:#333;vertical-align:top;display:inline-block;width:120px;padding-right:20px;text-align:right;}
+.roleshow ul li span{width:60px;text-align:center;display:inline-block;}
+
+/*commForm*/
+.commForm{padding:20px;}
+.commForm fieldset{border:1px solid #ccc;}
+.commForm fieldset legend{font-size:13px;color:#444;font-weight:bold; border: 1px solid #D8D8D8;margin-left:10px;padding:2px 5px;background-color: #F9F9F9;}
+.commForm ul{padding:10px 0;}
+.commForm ul li{padding:10px 0 5px 0;color:#444;}
+.commForm ul li label{color:#333;vertical-align:top;display:inline-block;width:120px;padding-right:20px;text-align:right;}
+.commForm ul li span{width:60px;text-align:center;display:inline-block;}
+
+.addForm{padding:30px 20px;overflow:hidden;}
+.addForm ul li{padding-bottom:10px;color:#444;}
+.addForm ul li label{color:#333;vertical-align:top;display:inline-block;width:100px;padding-right:20px;text-align:right;}
+
+.commtab{height:27px;border-bottom:1px solid #8DB2E3;}
+.commtab ul{}
+.commtab ul li{color:#15428B;cursor:pointer;background:url(../images/tabs_enabled.png) repeat-x;float:left;display:inline;margin-right:4px;padding:0 10px;border:1px solid #8DB2E3;height:26px;line-height:26px;}
+.commtab ul li.selected{font-weight:bold;background:url(../images/tabs_active.png) repeat-x;border-bottom:1px solid #fff;}
+.commshow{border:1px solid #8DB2E3;border-top:none;}
+
+.table_common th{font-size:13px;padding:3px;margin:3px;width:100px;text-align:right;background-color:#E3E8F0;border-bottom:1px solid #fff;font-weight:400;}
+.table_common th.th{text-align:center;}
+.table_common td{padding:6px;margin: 3px;width:240px;border-bottom: 1px solid #DDDDDF;color:#333333;}
+.table_common td.td{text-align:center;}
+.table_common textarea{overflow:auto;}
+/*.tableft{font-size:13px;padding:6px;margin:3px;width:90px;text-align:right;background-color:#E3E8F0;border-bottom:1px solid #fff;font-weight:400;}*/
+.w300{width:300px;}
+.w80{width:80px;}
+.w150{width:150px;}
+.h100{height:150px;}
+.c_content{padding:20px;}
+/* .commbox{border:1px solid #8DB2E3;} */
+.pic_fix{border:1px solid #9AA7AF;color: #999999;height:200px;line-height:200px;margin:0 auto;overflow:hidden;text-align: center;width: 220px;}
+.upbox{text-align:center;padding-top:6px;}
+/*.uploadbtn{background:url(../images/uploadbtn.jpg) no-repeat;height:30px;width:90px;border:0;cursor:pointer;display:inline-block;}*/
+
+.commtitle{background-color:#EFEFEF;border-bottom: 1px solid #CCCCCC;padding:5px;overflow:hidden;}
+.galleryManage{padding:15px;}
+.galleryManage ul li{float:left;display:inline;width:206px;margin:10px 0 0 10px;}
+
+.wmposition{display:inline-block;}
+.wmposition td{padding:3px 8px 3px 0;}
+
+/*login*/
+.loginbg{background:url(../images/loginbg.jpg)  top center no-repeat;}
+.loginbox{width:518px;height:250px;margin:225px auto 0 auto;padding:0 0 0 90px;}
+.loginbox ul li{padding-bottom:16px;color:#444;}
+.loginbox input{margin-right:5px;}
+.loginbox ul li label{color:#444;vertical-align:top;display:inline-block;width:56px;font-size:14px;padding-top:4px;}
+.loginbox ul li .logintips{position:absolute;width:300px;text-align:center;color:#ff0000;}
+.ltext{color:#444;background:url(../images/bg-input.png) no-repeat scroll left top #FFFFFF;border:1px solid #b1d492;height:28px;padding: 1px 2px;line-height: 28px;width:188px;font-size:14px;}
+.loginbtn{background:url(../images/loginbtn.jpg)  no-repeat;width:104px;height:74px;border:0;margin:55px 0 0 20px;cursor:pointer;}
+
+/*footer*/
+.footer{text-align:center;font-family:arial,"\5B8B\4F53";}
+
+.table3 {border-top:1px solid #d6d6d6; border-left:1px solid #d3d3d3; text-align:center; width:80%; margin:0 0;}
+.table3 td,.table1 th {border-bottom:1px solid #d3d3d3; border-right:1px solid #d6d6d6;}
+.table3 th { height:30px; background:#e8e8e8;}
+.table3 td { height:25px; line-height:25px;padding:5px 8px 5px 8px;text-align:center;}
+
+.addinputbtn{margin-left:-27px;background:url(../images/addbtn.png) no-repeat;width:16px;height:16px;border:none;cursor:pointer;}
+.addinputbtnM{margin-left:-26px;background:url(../images/addbtn.png) no-repeat;width:16px;height:16px;border:none;cursor:pointer;position:relative;margin-right:5px;margin-top:1px;}
+
+.ext_icon_del{background:url(../images/delbtn.png) no-repeat;width:16px;height:16px;border:none;cursor:pointer;margin-left:3px;}
+.ext_icon_edit{background:url(../images/editbtn.png) no-repeat;width:16px;height:16px;border:none;cursor:pointer;}
+
+.ext_icon_draft{background:url(../images/draftbtn.png) no-repeat;width:16px;height:16px;border:none;cursor:pointer;}

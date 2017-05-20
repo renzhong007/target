@@ -1,0 +1,71 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="untitled:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="sds.war">
+      <element id="artifact" artifact-name="untitled:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/antlr-2.7.7.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/aopalliance-1.0.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/aspectjweaver-1.7.2.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/authority_httpBase-0.0.40-SNAPSHOT.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/c3p0-0.9.2.1.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/cacheserver-0.0.7.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/cas-client-core-3.2.1.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/casJndiTool-1.0.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/Coder-0.0.2.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/commons-collections4-4.0.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/commons-jxpath-1.3.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/commons-logging-1.1.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/commons-pool-1.5.5.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/dc-baseClient-0.0.38-SNAPSHOT.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/dom4j-1.6.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/faj-utils-0.1.5.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/gson-2.1.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/hamcrest-core-1.3.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/hibernate-commons-annotations-4.0.2.Final.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/hibernate-core-4.2.20.Final.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/httpBase-0.0.27-SNAPSHOT.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/ibatis-sqlmap-2.3.4.726.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/jackson-annotations-2.4.0.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/jackson-core-2.4.3.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/jackson-core-asl-1.9.13.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/jackson-core-lgpl-1.9.13.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/jackson-databind-2.4.3.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/jackson-mapper-lgpl-1.9.13.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/javassist-3.18.1-GA.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/javax.annotation-api-1.2.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/jboss-logging-3.1.0.GA.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/jboss-transaction-api_1.1_spec-1.0.1.Final.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/jedis-2.1.0.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/json-20151123.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/jstl-1.2.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/junit-4.11.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/log4j-1.2.17.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/mchange-commons-java-0.2.3.4.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/Memcached-Java-Client-3.0.2.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/mybatis-3.2.8.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/mybatis-spring-1.2.0.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/slf4j-api-1.6.4.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/spring-aop-3.2.4.RELEASE.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/spring-beans-3.2.4.RELEASE.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/spring-context-3.2.4.RELEASE.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/spring-context-support-3.2.4.RELEASE.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/spring-core-3.2.4.RELEASE.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/spring-expression-3.2.4.RELEASE.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/spring-jdbc-3.2.4.RELEASE.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/spring-orm-3.2.4.RELEASE.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/spring-test-3.2.4.RELEASE.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/spring-tx-3.2.4.RELEASE.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/spring-web-3.2.4.RELEASE.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/spring-webmvc-3.2.4.RELEASE.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/sqlserver-4.0.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/standard-1.1.2.jar" />
+          <element id="file-copy" path="D:/apache-tomcat-7.0.72/webapps/webapps170429/water-gis/WEB-INF/lib/xml-apis-1.0.b2.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

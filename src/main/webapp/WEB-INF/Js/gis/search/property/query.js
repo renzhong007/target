@@ -1,0 +1,187 @@
+define(['jquery', 'util','search/property/layerlist'],function($, util, layerlist) {
+	var url = util.getConfig('gisLayerUrl');
+	var gisAttrQueryNames = util.getConfigList("gisAttrQueryNames");
+	var contentMapper = util.getConfigList("gisResultAttrPanelMapper");
+	var pageNumber = 0;
+	var pageSize = 10;
+	var totalSize = 0;
+	var nowPageNumber = 0;
+	var data = [];
+	var titleName = "类型";//本点号
+	//titleName = util.getConfig("gis_searchTitle");
+	var currentPageData = [];
+	
+	
+	/**
+	 * 查询方法
+	 */
+	function query() {
+		var layer = layerlist.getSelectedLayer();
+		//if($('#sole-input').val()=='输入所在道路查询'){
+		//	var inp='测压点';
+		//}else{
+			var inp = $('#sole-input').val();
+		//}
+		
+		var query = "";
+		if(inp != ""){
+			query += "(1<>1";
+			$.each(gisAttrQueryNames, function(i, n) {
+				query +=" or " +n.value + ' like \'%'+inp+'%\'';
+			});
+			query += ")";
+		}
+		f2net.window.querybywhere(url + '/'+layer,query,'returnquery');
+	
+	}
+	
+	/**
+	 * 设置数据
+	 */
+	function setData(obj) {
+		data = obj.features;
+		totalSize = data.length;
+		var lastpage = Math.ceil(totalSize / pageSize);
+		$("span#searchCount").text(totalSize);
+		$("span#totalPage").text(lastpage);
+	}
+	
+	/**
+	 * 获取第一页数据
+	 */
+	function getFirstPage() {
+		return getPage(1);
+	}
+	
+	/**
+	 * 获取下一页数据
+	 */
+	function getNextPage() {
+		if(nowPageNumber==Math.ceil(totalSize / pageSize))
+			{
+				return getLastPage();
+			}		
+		else{
+			return getPage(nowPageNumber+1);
+		}
+		
+	}
+	
+	/**
+	 * 获取前一页数据
+	 */
+	function getPrevPage() {
+		if(nowPageNumber==1)
+			{
+				return getFirstPage();
+			}
+			
+		else{
+				return getPage(nowPageNumber-1);
+		}
+		
+	}
+	
+	/**
+	 * 获取最后一页数据
+	 */
+	function getLastPage() {
+		var lastpage = Math.ceil(totalSize / pageSize);
+		return getPage(lastpage);
+	}
+	
+	/**
+	 * 获取获取第N页
+	 */
+	function getPage(num) {
+		var arr = [];
+		if (isIllegalPageNumber(num)) return arr;
+		$("span#currentPage").text(num);
+		for (var i = (num-1)*pageSize; i < totalSize && i < num*pageSize; i++) {
+			var obj = {};
+			if(layerlist.getSelectedLayer()=='1'){
+				titleName='测压点名称';
+			}else{
+				titleName='类型';
+			}
+			obj.title = data[i].attributes[titleName];
+			obj.id = util.randomChar(13);
+			obj.attrs = [];
+			$.each(contentMapper, function(index,n) {
+				if (n.value in data[i].attributes) {
+					obj.attrs.push({title:n.name,value: data[i].attributes[n.value],name: n.name});
+				}
+			});
+			if(data[i].geometry!=undefined){
+				if(data[i].geometry.paths) {
+					obj.geometry = {"paths": []};
+					$.each(data[i].geometry.paths, function(i, n) {
+						var temp1 = [];
+						$.each(n, function(i1, n1) {
+							var temp2 = [];
+							temp2.push(n1[0]);
+							temp2.push(n1[1]);
+							temp1.push(temp2);
+						});
+						obj.geometry.paths.push(temp1);
+					});
+				} else {
+					obj.x = data[i].geometry.x;
+					obj.y = data[i].geometry.y;
+				}
+				arr.push(obj);
+			}else{
+				obj.x = data[i].attributes.经度;
+				obj.y = data[i].attributes.纬度;
+				arr.push(obj);
+			}
+			
+			
+		}
+		nowPageNumber = num;
+		currentPageData = arr;
+		return arr;
+	}
+	
+	/**
+	 * 判断页数是否超过最大页数
+	 */
+	function isIllegalPageNumber(num) {
+		var totalpage = totalSize / pageSize;
+		if ((num - 1) > totalpage) {
+			return true;
+		} else if (num < 1) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	function getDataById(id) {
+		var d;
+		$.each(currentPageData, function(i, n) {
+			if (id == n.id) {
+				d= n;
+				return false;
+			}
+		});
+		return d;
+	}
+	
+	return {
+		setData:setData, 
+		query:query, 
+		getFirstPage:getFirstPage, 
+		getLastPage:getLastPage,
+		getNextPage:getNextPage,
+		getPrevPage:getPrevPage,
+		getPage:getPage,
+		getDataById:getDataById,
+		totalSize:totalSize,
+		pageNumber:pageNumber,
+		pageSize:pageSize,
+		nowPageNumber:nowPageNumber
+	};
+	
+	
+});

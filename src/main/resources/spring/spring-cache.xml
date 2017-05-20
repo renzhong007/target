@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/mvc classpath:/spring-mvc-4.0.xsd
+       http://www.springframework.org/schema/beans classpath:/org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/util classpath:/org/springframework/beans/factory/xml/spring-util-3.0.xsd 
+       http://www.springframework.org/schema/aop classpath:/org/springframework/aop/config/spring-aop-3.0.xsd
+        http://www.springframework.org/schema/context classpath:/org/springframework/context/config/spring-context-3.0.xsd"
+        default-lazy-init="true">
+        
+    <!-- 方法和schedule绑定的配置 -->
+    <util:map id="customScheduleConfigMap">
+    	<entry key="getHistoryData" value="fiveMinCacheScheduler"></entry> 
+    	<entry key="getRealTimeData" value="oneMinCacheScheduler"></entry> 
+    	<entry key="getRealTimeByCid" value="oneMinCacheScheduler"></entry> 
+    	<entry key="getRealTimeStationPumpState" value="oneMinCacheScheduler"></entry> 
+    	<entry key="getStaByIds" value="oneMinCacheScheduler"></entry>
+<!--     	<entry key="list" value="oneMinCacheScheduler"></entry> -->
+<!--     	<entry key="listJsonByDeviceTypeConditions" value="oneMinCacheScheduler"></entry> -->
+    </util:map>
+        
+</beans>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="GB2312"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/context"	
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd"
+		default-lazy-init="true">
+		
+    <!-- use annotation config service -->
+	<c:annotation-config />
+	
+    <!-- use annotation find service,  modify base-package as yours -->
+	<c:component-scan base-package="com.waternet.gis,com.lihs.httpBase,com.lihs.authority" use-default-filters="true">
+		<c:include-filter type="annotation" expression="org.springframework.stereotype.Service" />
+		<c:exclude-filter type="annotation" expression="javax.jws.WebService"/>
+	</c:component-scan>
+	
+	<!-- using @Transactional declare transaction classes and methods -->
+	<tx:annotation-driven proxy-target-class="true"/>
+	
+</beans>

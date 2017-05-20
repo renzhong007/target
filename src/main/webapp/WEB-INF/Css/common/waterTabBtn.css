@@ -1,0 +1,21 @@
+.waterTabBtn {position: relative;}
+.waterTabBtn ul { clear:both;padding: 0; margin: 0;}
+.waterTabBtn ul li{ list-style:none; width:74px; float:left; cursor:pointer; text-align: center;border: 1px solid #DDD;margin-left : 5px;}
+.waterTabBtn ul li:hover{ list-style:none; width:74px; float:left; cursor:pointer; text-align: center;border: 1px solid red;margin-left : 5px;}
+.waterTabBtn ul li a{ text-align:center; display:block;}
+.waterTabBtn .active { border: 1px solid red; color: red;}
+
+
+
+/*  Tab左右移动按钮  来自百度  */
+.waterTabBtn .boxConLeft, .waterTabBtn .boxConRight {position: absolute;top: 10px;z-index: 1;}
+.waterTabBtn .boxConRight {right: 0;}
+.waterTabBtn .boxConLeft {left: 0;}
+
+.waterTabBtn .boxConL, .waterTabBtn .boxConLHov, .waterTabBtn .boxConR, .waterTabBtn .boxConRHov {background: url(../../Images/common/bd.png) no-repeat 0 0;cursor: pointer;height: 30px;width: 6px;zoom: 1;}
+.waterTabBtn .boxConR {background-position: -12px -75px;position: absolute;right: 7px;top: 18px;z-index: 2;}
+.waterTabBtn .boxConL {background-position: -18px -75px;position: absolute;left: 12px;top: 18px;z-index: 2;}
+.waterTabBtn .boxConRHov {background-position: 0 -75px;position: absolute;right: 7px;top: 18px;z-index: 2;}
+.waterTabBtn .boxConLHov {background-position: -6px -75px;position: absolute;left: 12px;top: 18px;z-index: 2;}
+.waterTabBtn .boxConC {position: absolute;left: 16px;}
+

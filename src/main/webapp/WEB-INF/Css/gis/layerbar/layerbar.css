@@ -1,0 +1,154 @@
+#layerbar {
+	position: absolute;
+	right: -200px;
+	top: 85px;
+	width: 202px;
+	height: 500px;
+	background-color: #fff;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+	border:1px solid #C4C4C4;
+}
+#layerbar #toggle-button{
+    width: 23px;
+    height: 48px;
+    cursor: pointer;
+    background:white;
+    position:absolute;
+    top:10px;
+    left:-23px;
+    border: 0;
+    padding: 0;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.3);
+    /*display: none;*/
+    display: inline-block;
+}
+#layerbar #toggle-button span{
+	display:block;
+	content:'';
+	background:url(../../../Images/gis/search/toggle.png) no-repeat 0px 0px ;
+	/* background:url(../../../Images/gis/search/toggle.png) no-repeat -22px 0px ; */
+	width: 7px;
+    height: 16px;
+    margin-left:8px;
+}
+
+#layerbar .header {
+	height:39px;
+}
+#layerbar .header .toggle{
+	cursor:pointer;
+	width:38px;
+	float:left;
+	padding: 8px 0;
+	border-bottom: #ccc solid 4px;
+	height:40px;
+}
+#layerbar .header .toggle:before{
+	    content: '';
+    display: block;
+    height: 1px;
+    width: 21px;
+    border-top: 3px solid #48A0D7;
+    position: absolute;
+    top: 16px;
+    left: 7px;
+}
+#layerbar .header .toggle:after{
+	content:'';
+	display: block;
+	height:20px;
+	border:1px dashed #ccc;
+	width:1px;
+	position:absolute;
+	left:36px;
+	top:8px;
+	
+}
+#layerbar .header ul {
+	overflow: hidden;
+	height:inherit;
+	width:162px;
+	padding:0px;
+	float:left;
+	
+}
+
+#layerbar .header ul li {
+	width: 81px;
+	text-align: center;
+	float: left;
+	padding: 8px 0;
+	border-bottom: #ccc solid 3px;
+	margin:0;
+}
+
+#layerbar .header ul li.active {
+	border-bottom-color: #2466B9;
+}
+#layerbar >article{
+	display: none;
+	overflow-x: hidden;
+    overflow-y: auto;
+	height:460px;
+	width:100%;
+	padding: 0px;
+}
+#layerbar> article.active{
+	display: block;
+}
+#layerbar .header ul li a {
+	font-size: 14px;
+	font-weight: bold;
+	color: #58585A;
+}
+
+#layerbar .header ul li.active a {
+	color: #2466B9;
+}
+#layerbar article>nav>article> ul >li >label,#layerbar article>nav>article> ul >li >a{
+	color:#2466B9;
+	    font-size: 14PX;
+}
+
+#layerbar article>nav>article> ul >li>a.active{
+	background: url(../../../Images/gis/layerbar/selected.png) no-repeat 4px 2px #f2f2f2;
+	padding-left:13px;
+	color:#58585A;
+}
+#layerbar article>nav>article> ul >li>ul >li>a.active{
+	color:#58585A;
+	background: url(../../../Images/gis/layerbar/selected_1.png) no-repeat 19px 0px;
+}
+#layerbar article>nav>article> ul >li>ul >li>ul >li>a.active{
+	color:#58585A;
+	background: url(../../../Images/gis/layerbar/selected_2.png) no-repeat 29px 0px;
+}
+
+
+
+#zhxx .station-state-1 {
+    width: 20px;
+    height: 20px;
+     margin-left: 2px;
+    background: url(../../../Images/gis/layerbar/b1.gif);
+    background-repeat: no-repeat;
+    overflow: hidden;
+     background-position: -1px -3px;  
+}
+
+
+#zhxx .station-state-0 {
+    width: 20px;
+    height: 20px;
+     margin-left: 2px;
+    background: url(../../../Images/gis/layerbar/close.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+     background-position: -2px -4px; 
+}
+
+#zhxx .pumpStatus {
+    display: inline-block;
+}
+
+
